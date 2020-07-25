@@ -52,7 +52,7 @@ a {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .section-header {

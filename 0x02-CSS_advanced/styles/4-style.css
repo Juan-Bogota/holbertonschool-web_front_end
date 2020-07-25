@@ -32,7 +32,7 @@ a {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .card-category,

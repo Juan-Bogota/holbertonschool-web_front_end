@@ -223,7 +223,7 @@ a:active {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .section-header {

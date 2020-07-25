@@ -201,7 +201,8 @@ h6 {
   font-weight: var(--font-weight-bold);
 }
 
-body a {
+body,
+a {
   color: var(--text-color);
 }
 

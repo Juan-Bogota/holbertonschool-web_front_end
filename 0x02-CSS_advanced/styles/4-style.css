@@ -26,7 +26,8 @@ h6 {
   font-family: var(--font-family-title);
 }
 
-body a {
+body,
+a {
   color: var(--text-color);
 }
 

@@ -346,7 +346,7 @@ ul.row {
 }
 
 .row::after {
-  content: "his";
-  display: table;
+  content: "";
+  display: table-row;
   float: none;
 }

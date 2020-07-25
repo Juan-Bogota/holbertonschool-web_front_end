@@ -347,6 +347,6 @@ ul.row {
 
 .row::after {
   content: "";
-  display: table-row;
-  float: none;
+  display: table;
+  float: right;
 }

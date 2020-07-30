@@ -1,0 +1,9 @@
+/* import colors */
+
+@import "11-photos";
+
+@each $author in $list-names {
+  .photo-#{$author} {
+    background: image-url("photos/#{$author}.jpg") no-repeat;
+  }
+}

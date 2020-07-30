@@ -1,0 +1,14 @@
+/* Nested and nested again*/
+
+@mixin margin-first($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+body {
+  @include margin-first(10px, 10px);
+}
+
+div {
+  @include margin-first(15px, 15px);
+}

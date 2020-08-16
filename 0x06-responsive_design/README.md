@@ -13,4 +13,5 @@
 
 ### TASK
 
-- [**0.Fix the hero banner**]()
+- [**0.Fix the hero banner**](https://github.com/Juan-Bogota/holbertonschool-web_front_end/blob/master/0x06-responsive_design/01-index.html)
+- [**1. Make the container flexible**](https://github.com/Juan-Bogota/holbertonschool-web_front_end/blob/master/0x06-responsive_design/02-index.html)

@@ -15,3 +15,4 @@
 
 - [**0.Fix the hero banner**](https://github.com/Juan-Bogota/holbertonschool-web_front_end/blob/master/0x06-responsive_design/01-index.html)
 - [**1. Make the container flexible**](https://github.com/Juan-Bogota/holbertonschool-web_front_end/blob/master/0x06-responsive_design/02-index.html)
+- [**2. Fix layout issues**](https://github.com/Juan-Bogota/holbertonschool-web_front_end/blob/master/0x06-responsive_design/03-index.html)

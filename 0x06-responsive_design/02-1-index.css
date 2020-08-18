@@ -216,13 +216,10 @@
             <div class="row">
               <div class="col-1-2">
                 <img
-                  sizes="(max-width: 1750px) 40vw, 700px"
-                  srcset="
-                    images/pic-about-01_o7memx_c_scale,w_380.webp 380w,
-                    images/pic-about-01_o7memx_c_scale,w_611.webp 611w,
-                    images/pic-about-01_o7memx_c_scale,w_700.webp 700w"
-                  src="images/pic-about-01_o7memx_c_scale,w_700.webp"
+                  src="images/pic-about-01.jpg"
                   alt=""
+                  width="460"
+                  height="460"
                 />
               </div>
               <div class="col-1-2">
@@ -267,13 +264,11 @@
                 <article class="card-blog">
                   <div>
                     <img
-                      sizes="(max-width: 2625px) 40vw, 1050px"
-                      srcset="
-                      images/pic-article-01_gcvgvi_c_scale,w_380.webp 380w,
-                      images/pic-article-01_gcvgvi_c_scale,w_941.webp 941w,
-                      images/pic-article-01_gcvgvi_c_scale,w_1050.webp 1050w"
-                      src="images/pic-article-01_gcvgvi_c_scale,w_1050.webp"
-                      alt="">
+                      src="images/pic-article-01.jpg"
+                      alt=""
+                      width="305"
+                      height="305"
+                    />
                   </div>
                   <p class="card-category">Career</p>
                   <h3>
@@ -291,13 +286,11 @@
                 <article class="card-blog">
                   <div>
                     <img
-                      sizes="(max-width: 2418px) 40vw, 967px"
-                      srcset="
-                      images/pic-article-02_o2tfqh_c_scale,w_380.webp 380w,
-                      images/pic-article-02_o2tfqh_c_scale,w_851.webp 851w,
-                      images/pic-article-02_o2tfqh_c_scale,w_967.webp 967w"
-                      src="images/pic-article-02_o2tfqh_c_scale,w_967.webp"
-                      alt="">
+                      src="images/pic-article-02.jpg"
+                      alt=""
+                      width="305"
+                      height="305"
+                    />
                   </div>
                   <p class="card-category">Digital Life</p>
                   <h3>

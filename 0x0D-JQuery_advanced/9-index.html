@@ -33,9 +33,6 @@
             )
         }
         function queryWikipedia(search, offset = 0) {
-            const itemsPerPage = 10;
-            const url = "https://en.wikipedia.org/w/api.php";
-
             displayLoading(true);
             $.ajax({
                 url: "https://en.wikipedia.org/w/api.php",
@@ -44,7 +41,6 @@
                 dataType: 'jsonp',
                 success: function (result) {
                     $("ul").first().empty();
-                    displayLoading(false);
                     const query = result.query.search;
                     for (let index in query) {
                         addNewArticle(
@@ -55,8 +51,10 @@
                     }
                     const totalHits = result.query.searchinfo.totalhits;
                     buildPagination(totalHits, 10, offset);
-                },
+                    displayLoading(false);
+                }
             });
+
 
         }
         function buildPagination(numberOfItems, itemsPerPage, currentOffset) {

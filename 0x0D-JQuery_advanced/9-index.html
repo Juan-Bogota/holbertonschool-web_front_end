@@ -33,6 +33,9 @@
             )
         }
         function queryWikipedia(search, offset = 0) {
+            const itemsPerPage = 10;
+            const url = "https://en.wikipedia.org/w/api.php";
+
             displayLoading(true);
             $.ajax({
                 url: "https://en.wikipedia.org/w/api.php",
@@ -40,7 +43,8 @@
                 data: { action: 'query', list: 'search', srsearch: search, format: 'json', sroffset: offset * 10 },
                 dataType: 'jsonp',
                 success: function (result) {
-
+                    $("ul").first().empty();
+                    displayLoading(false);
                     const query = result.query.search;
                     for (let index in query) {
                         addNewArticle(
@@ -53,26 +57,25 @@
                     buildPagination(totalHits, 10, offset);
                 },
             });
-            displayLoading(false);
+
         }
         function buildPagination(numberOfItems, itemsPerPage, currentOffset) {
             $("#pagination").empty();
             for (let i = 1; i <= numberOfItems / itemsPerPage; i++) {
-                $("#pagination").append("<li>" + i);
-                $("#pagination li").css({
-                    "display": "inline",
+
+                let pagination = $('<li>' + i + '</li>')
+                pagination.css({
                     "cursor": "pointer",
                     "margin-left": "10px",
+                    "display": "inline-block",
                 });
+                $("#pagination").append(pagination);
                 $(`#pagination li:nth-of-type(${currentOffset})`).css("font-weight", "bold");
+                pagination.click(function () {
+                    queryWikipedia($("input[type='text']").val(), this.innerHTML);
+                });
 
             }
-            $("li").click(function () {
-                $("#pagination").empty();
-                $("#list").empty();
-                queryWikipedia($("input[type='text']").val(), this.innerHTML);
-            });
-
         }
         function displayLoading(loading) {
             if (loading === true) {
